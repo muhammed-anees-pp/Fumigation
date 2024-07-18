@@ -1,0 +1,188 @@
+Q1:Enter 5 values and print the entered values
+
+    int i,a[5];
+    printf("Enter the values: ");
+
+    for(i=0;i<5;i++){
+        scanf("%d",&a[i]);
+    }
+
+    printf("Entered values are: ");
+
+    for(i=0;i<5;i++){
+        printf("%d ",a[i]);
+    }
+
+
+
+Q2:Taking the limit of array from user and taking the size of array into it
+
+    int limit,i,a[100];
+    printf("Enter the limit of array: ");
+    scanf("%d",&limit);
+
+    printf("Enter the values: ");
+    for(i=0;i<limit;i++){
+        scanf("%d",&a[i]);
+    }
+
+    printf("Entered values are: ");
+
+    for(i=0;i<limit;i++){
+        printf("\n%d",a[i]);
+    }
+
+
+Q3:Sum of n no.of values
+
+    int i,limit,sum=0,a[100];
+    printf("Enter the limit of numbers: ");
+    scanf("%d",&limit);
+    printf("Enter the numbers: ");
+
+    for(i=0;i<limit;i++){
+        scanf("%d",&a[i]);
+    }
+
+    for(i=0;i<limit;i++){
+        sum=sum+a[i];
+    }
+    printf("Sum is equal to: %d",sum);
+    
+
+
+Q4:Search key in array
+
+    int limit,i,values[100],searchkey,flag=0;
+    printf("Enter the limit: ");
+    scanf("%d",&limit);
+    
+    printf("Enter the values: ");
+    for(i=0;i<limit;i++){
+        scanf("%d",&values[i]);
+    }
+
+    printf("Enter the search key: ");
+    scanf("%d",&searchkey);
+
+    for(i=0;i<limit;i++){
+        if(searchkey==values[i]){
+            flag=1;
+            break;
+        }
+    }
+
+    if(flag==1){
+        printf("Value found at the position of %d",i+1);
+    }
+    else{
+        printf("Value not found");
+    }
+
+Q5:Sorting with array
+
+    int i,j,limit,values[100],temp;
+    printf("Enter the limit: ");
+    scanf("%d",&limit);
+
+    printf("Enter the values: ");
+    for(i=0;i<limit;i++){
+        scanf("%d",&values[i]);
+    }
+
+    for(i=0;i<limit-1;i++){
+        for(j=i+1;j<limit;j++){
+            if(values[i]>values[j]){
+                temp=values[i];
+                values[i]=values[j];
+                values[j]=temp;               
+            }
+        }
+    }
+
+    printf("Sorted values in order:");
+    for(i=0;i<limit;i++){
+        printf("\n%d",values[i]);
+    }
+
+
+Q6:Write a program to interchange the values of two arrays
+
+    int i,j,limit,array1[100],array2[100],temp;
+    printf("Enter the limit of array: ");
+    scanf("%d",&limit);
+
+    printf("Enter the 1st array values: ");
+    for(i=0;i<limit;i++){
+        scanf("%d",&array1[i]);
+    }
+
+    printf("Enter the 2nd array values: ");
+    for(i=0;i<limit;i++){
+        scanf("%d",&array2[i]);
+    }
+
+    for(i=0;i<limit;i++){
+            temp=array1[i];
+            array1[i]=array2[i];
+            array2[i]=temp;
+        }
+    
+    printf("First array: ");
+    for(i=0;i<limit;i++){
+        printf("\t%d",array1[i]);
+    }
+
+    printf("\nSecond array: ");
+    for(i=0;i<limit;i++){
+        printf("\t%d",array2[i]);
+    }
+
+Q7:Write a program to find the number of even numbers in an array
+
+    int i,j,limit,numbers[100],even=0;
+    printf("Enter the size of array: ");
+    scanf("%d",&limit);
+
+    printf("Enter the values of array: ");
+    for(i=0;i<limit;i++){
+        scanf("%d",&numbers[i]);
+    }
+
+    for(i=0;i<limit;i++){
+        if(numbers[i]%2==0){
+            even=even+1;
+        }
+    }
+
+    printf("No.of even numbers in the given array: %d",even);
+    
+
+Q8:Write a program to sort an array in descending order
+
+    int i,j,limit,values[100],temp;
+    printf("Enter the limit: ");
+    scanf("%d",&limit);
+
+    printf("Enter the values: ");
+    for(i=0;i<limit;i++){
+        scanf("%d",&values[i]);
+    }
+
+    for(i=0;i<limit-1;i++){
+        for(j=i+1;j<limit;j++){
+            if(values[i]>values[j]){
+                temp=values[i];
+                values[i]=values[j];
+                values[j]=temp;
+            }
+        }
+    }
+
+    printf("Descending order array: ");
+    for(i=0;i<limit;i++){
+        printf("\n%d",values[i]);
+    }
+
+
+
