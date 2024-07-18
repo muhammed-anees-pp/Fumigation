@@ -1,0 +1,59 @@
+Q:
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+
+Program:
+int i,j,row=5,space;
+for(i=1;i<=row;i++){
+for(space=1;space<=(row-i);space++){
+printf(" ");
+}
+for(j=1;j<=i;j++){
+printf("* ");
+}
+printf("\n");
+}
+
+Break down:
+Outer loop
+i=1,2,3,4,5
+
+Inner loop of space
+when i=1
+space=1
+1<=(5-1) - print space
+space=2
+2<=(5-1) - print space
+space=3
+3<=(5-1) - print space
+space=4
+4<=(5-1) - print space
+space=5
+5<=(5-1) - loop break
+
+then enter to the next inner loop of *
+i=1
+j=1
+1<=1 - print * and space
+j=2
+2<=1 - loop break
+
+
+When i=2
+space=1
+1<=(5-2) - print space
+space=2
+2<=(5-2) - print space
+space=3
+3<=(5-2) - print space
+space=4
+4<=(5-2) - loop break
+
+i=2
+j=1
+1<=2 - print * and a space
+j=2
+2<=2 - print * and a space
