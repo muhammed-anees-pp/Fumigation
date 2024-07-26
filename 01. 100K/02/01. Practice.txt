@@ -1,0 +1,57 @@
+01. Accept a number and showing it to the user
+
+#include <stdio.h>
+int main()
+{
+	int num;
+	printf("Enter a Number: ");
+	scanf("%d",&num);
+	printf("You have entered %d",num);
+
+	return 0;
+}
+
+02 Sum of two numbes
+
+#include <stdio.h>
+int main()
+{
+	int num1,num2,sum;
+	printf("Enter two numbers: ");
+	scanf("%d%d",&num1,&num2);
+	sum=num1+num2;
+	printf("Sum of the the two numbers is %d",sum);
+	
+	return 0;
+}
+
+03. Averge of 3 numbers
+
+#include <stdio.h>
+int main()
+{
+	int num1,num2,num3;
+	float average;
+	printf("Enter 3 numbers: ");
+	scanf("%d%d%d",&num1,&num2,&num3);
+	average=((num1+num2+num3)/3);
+	printf("Average is %f",average);
+	
+	return 0;
+}
+
+04. Swapping
+
+#include <stdio.h>
+int main()
+{
+	int num1=10,num2=20,temp;
+	temp=num1;
+	num1=num2;
+	num2=temp;
+	printf("Number 01: %d   Number 02: %d",num1,num2);
+	
+	return 0;
+} 
+
+

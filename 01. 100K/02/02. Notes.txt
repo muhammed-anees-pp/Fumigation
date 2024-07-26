@@ -1,0 +1,32 @@
+# Input
+scanf("%d",&a);
+
+# Output
+printf("%d",a);
+
+#Variable
+To store data
+
+#Data Type
+1-Integer
+2-Floa
+3-Character
+
+# Declaration
+int a;     Variable declaration
+
+# Initialization
+int a=10;   Variable initialization
+
+# Escape characters
+%d - Integer
+%f - Float
+%c - Character
+
+# Operators
+01-Arithmatic -+,-,*,/
+02-Rleational -==,<,>,<=,>=
+03-Logical - &&,||,!
+04-Assignment - =,+=,-=
+
+

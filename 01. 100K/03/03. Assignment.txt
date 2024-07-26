@@ -1,0 +1,128 @@
+Assignment Day 3
+
+01. Write a program to check whether a student has passed or failed in a subject after he or she enters their mark (pass mark for a subject is 50 out of 100).
+Program should accept an input from the user and output a message as “Passed” or “Failed”
+Variable 
+Data type
+mark
+float
+
+#include <stdio.h>
+int main()
+{
+	float mark;
+	printf("Enter your marks out of 100: ");
+	scanf("%f",&mark);
+	if(mark>=50){
+	printf("Passed");
+	}
+	else{
+	printf("Failed");
+	}
+
+	return 0;
+}
+
+
+02. Write a program to show the grade obtained by a student after he/she enters their total mark percentage.
+Program should accept an input from the user and display their grade as follows
+Mark
+Grade
+< 90
+A
+80-89
+B
+70-79
+C
+60-69
+D
+50-59
+E
+< 50
+Failed
+
+Variable 
+Data type
+Total mark
+float
+
+
+#include <stdio.h>
+int main()
+{
+	float TMP;
+	printf("Enter your mark percentage: ");
+	scanf("%f",&TMP);
+	if(TMP>=90){
+	printf("Grade A");}
+	else if(TMP<=89 && TMP>=80){
+	printf("Grade B");}
+	else if(TMP<=79 && TMP>=70){
+	printf("Grade C");}
+	else if(TMP<=69 && TMP>=60){
+	printf("Grade D");}
+	else if(TMP<=59 && TMP>=50){
+	printf("Grade E");}
+	else{
+	printf("Failed");}
+	
+	return 0;
+}
+
+
+
+03. Using the ‘switch case’ write a program to accept an input number from the user and output the day as follows. 
+Input
+Output
+1
+Sunday
+2
+Monday
+3
+Tuesday
+4
+Wednesday
+5
+Thursday
+6
+Friday
+7
+Saturday
+Any other input
+Invalid Entry
+
+#include <stdio.h>
+int main()
+{
+	int input;
+	printf("Select your day \n1 for Sunday \n2 for Monday \n3 for Tuesday \n4 for Wednesday \n5 for Thursday \n6 for Friday \n7 for Saturday \n");
+	scanf("%d",&input);
+	switch(input){
+	case 1:
+	printf("Sunday");
+	break;
+	case 2:
+	printf("Monday");
+	break;
+	case 3:
+	printf("Tuesday");
+	break;
+	case 4:
+	printf("Wednesday");
+	break;
+	case 5:
+	printf("Thursday");
+	break;
+	case 6:
+	printf("Friday");
+	break;
+	case 7:
+	printf("Saturday");
+	break;
+	default:
+	printf("Wrong Entry");	
+
+	}
+	return 0;
+}
+

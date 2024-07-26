@@ -1,0 +1,55 @@
+Q:
+
+* * * * *
+ * * * *
+  * * *
+   * *
+    *
+
+
+Program:
+
+int i,j,row=5;
+for(i=row;i>=1;i--){
+	for(j=1;j<=row;j++){
+	if((i+j)>row) printf("* ");
+	else printf(" ");
+	}
+	printf("\n");
+	}
+
+
+Break down:
+
+Outer loop
+i=5,4,3,2,1
+
+Inner loop
+when i=5
+j=1;1<=5
+(5+1)>5 - print * and space
+j=2;2<=5
+(5+2)>5 - print * and space
+j=3;3<=5
+(5+3)>5 - print * and space
+j=4;4<=5
+(5+4)>5 - print * and space
+j=5;5<=5
+(5+5)>5 - print * and space
+
+when i=4
+j=1;1<=5
+(4+1)>5 - print space
+j=2;2<=5
+(4+2)>5 - print * and space
+j=3;3<=5
+(4+3)>5 - print * and space
+j=4;4<=5
+(4+4)>5 - print * and space
+j=5;5<=5
+(4+5)>5 - print * and space
+
+
+
+
+

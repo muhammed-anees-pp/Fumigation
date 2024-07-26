@@ -1,0 +1,140 @@
+01. Number is positive or negative
+
+#include <stdio.h>
+int main()
+{
+	int num;
+	printf("Enter a Number: ");
+	scanf("%d",&num);
+	if(num>0){
+	printf("The given number is positive");
+	}
+	else{
+	printf("The given number is negative");
+	}
+	return 0;
+}
+
+02. Greatest number from the two numbers
+
+#include <stdio.h>
+int main()
+{
+	int num1,num2;
+	printf("Enter two numbers: ");
+	scanf("%d%d",&num1,&num2);
+	if(num1>num2){
+	printf("%d is the greatest number",num1);
+	}
+	else{
+	printf("%d is the greatest number",num2);
+	}
+
+	return 0;
+}
+
+03. Greatest number from the 3
+
+#include <stdio.h>
+int main()
+{
+	int num1,num2,num3;
+	printf("Enter 3 numbers: ");
+	scanf("%d%d%d",&num1,&num2,&num3);
+	if(num1>num2){
+	if(num1>num3){
+	printf("%d is the greatest number",num1);}}
+	if(num2>num1){
+	if(num2>num3){
+	printf("%d is the greatest number",num2);}}
+	if(num3>num1){
+	if(num3>num2){
+	printf("%d is the greatest number",num3);}}
+
+	return 0;
+}
+
+04. Arithmetic operations with else if ladder
+
+#include <stdio.h>
+int main()
+{
+	int num1,num2,choice;
+	float result;
+	printf("Enter 2 numbers: ");
+	scanf("%d%d",&num1,&num2);
+	printf("Select the operation \n1 for addition \n2 for subtraction \n3 for multiplication \n4 for division \n");
+	scanf("%d",&choice);
+	
+	if(choice==1){
+	result=num1+num2;
+	printf("Result: %f",result);}
+	else if(choice==2){
+	result=num1-num2;
+	printf("Result: %f",result);}
+	else if(choice==3){
+	result=num1*num2;
+	printf("Result: %f",result);}
+	else if(choice==4){
+	result=num1/num2;
+	printf("Result: %f",result);}
+	else{printf("Wrong selection");}
+	
+	return 0;
+}
+
+
+04a. Also do like this:
+#include <stdio.h>
+int main()
+{
+	int num1,num2,choice;
+	float result;
+	printf("Enter 2 numbers: ");
+	scanf("%d%d",&num1,&num2);
+	printf("Select the operation \n1 for addition \n2 for subtraction \n3 for multiplication \n4 for division \n");
+	scanf("%d",&choice);
+	
+	if(choice==1){
+	result=num1+num2;}
+	else if(choice==2){
+	result=num1-num2;}
+	else if(choice==3){
+	result=num1*num2;}
+	else if(choice==4){
+	result=num1/num2;}
+	if(choice==1||choice==2||choice==3||choice==4){
+	    printf("Result: %f",result);
+	}
+	else{printf("Wrong selection");}
+	
+	return 0;
+}
+
+05. Hotel menu with switch
+
+#include <stdio.h>
+int main()
+{
+	int choice;
+	printf("Select your menu \n1 for Porotta \n2 for Chappathi \n3 for Vellappam \n4 for Pathiri \nOption: ");
+	scanf("%d",&choice);
+	switch(choice){
+	case 1:
+	printf("You have selected Porotta");
+	break;
+	case 2:
+	printf("You have selected Chappathi");
+	break;
+	case 3:
+	printf("You have selected Vellappam");
+	break;
+	case 4:
+	printf("You have selected Pathiri");
+	break;
+	default:
+	printf("Wrong selection");
+	break;
+	}
+	return 0;
+}
