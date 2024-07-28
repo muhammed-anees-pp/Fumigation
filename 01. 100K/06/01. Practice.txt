@@ -1,0 +1,49 @@
+01. Accept name from user
+
+#include <stdio.h>
+int main()
+{
+	char name[20];
+	printf("Enter your name: ");
+	scanf("%s",name);
+	printf("Your name is %s.",name);
+
+	return 0;
+} 
+
+02. When using gets
+
+#include <stdio.h>
+int main()
+{
+	char name[20];
+	printf("Enter your name: ");
+	gets(name);
+	printf("Your name is %s.",name);
+
+	return 0;
+}  
+
+03. Multi dimensional array
+
+#include <stdio.h>
+int main()
+{
+    int i,j,values[3][3];
+    printf("Enter the array values: ");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&values[i][j]);
+        }
+    }
+
+    printf("Multi diementional array values are:\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("%d ",values[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}

@@ -1,0 +1,115 @@
+# When taking string from user do not needed to use & in scanf.
+char name[6];
+scanf("%s",name);
+printf("%s",name);
+
+# Assign string for developer side like
+1. name[]={'A','N','E','E','S','\0'};
+2. name[]="ANEES";
+
+# Functions
+-Argument/Parameter (Eg:Cash)
+-Return value (Eg:Product)
+
+*int main() || void main() ----main function
+*
+
+4 Types of function
+1-Function without argument without return value
+
+#include <stdio.h>
+void sum(); //Function declaring
+int main()
+{
+	sum(); //Function calling
+	return 0;
+}
+
+//Defining function
+void sum()
+{
+	int num1,num2,sum;
+	printf("Enter two numbers: ");
+	scanf("%d%d",&num1,&num2);
+	sum=num1+num2;
+	printf("Result:%d",sum);
+}
+
+Note:
+*void used because nothing is returning
+*write the data type that returning like int, char
+
+2-Function with argument without return value
+
+#include <stdio.h>
+
+void sum(int,int); //Function declaring with data type
+int main()
+{
+	int a,b;
+	printf("Enter two numbers: ");
+	scanf("%d%d",&a,&b);
+	
+	sum(a,b); //Function called and passed the argument
+	return 0;
+}
+
+
+//Function defining
+
+void sum(int num1,int num2)//Declaring the values from the program-argument
+{
+	int result;
+	result=num1+num2;
+	printf("Result:%d",result);
+}
+
+3-Function with argument with return value
+
+#include <stdio.h>
+
+int sum(int,int); //Function declaring with data type of argument
+int main()
+{	
+	int a,b,res;
+	printf("Enter two numbers: ");
+	scanf("%d%d",&a,&b);
+	res=sum(a,b); //Here res just a name, we can use any name
+	printf("Result:%d",res);
+	return 0;
+}
+
+
+int sum(int num1,int num2)//with function name int used here because of returning int data type
+{
+	int result;
+	result=num1+num2;
+	return result; //Return value giving here
+} 
+
+04-Fuction without argement with return value
+
+#include <stdio.h>
+
+int sum(); //Function declaring
+int main()
+{
+	int k;
+	k=sum(); //Function calling
+	printf("Result is %d",k);
+	return 0;
+}
+
+
+//Define Function
+int sum()
+{
+	int num1,num2,result;
+	printf("Enter two numbers: ");
+	scanf("%d%d",&num1,&num2);
+	result=num1+num2;
+	
+	return result;
+}
+
+#include <stdio.h>

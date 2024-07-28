@@ -1,0 +1,161 @@
+01. Print 1-100 with for loop
+
+#include <stdio.h>
+int main()
+{
+	int i;
+	for(i=1;i<=100;i++){
+		printf("%d\n",i);}
+	return 0;
+}
+
+02. Sum of n numbers
+
+#include <stdio.h>
+int main()
+{
+	int num,i,sum=0;
+	printf("Enter a number: ");
+	scanf("%d",&num);
+	for(i=1;i<=num;i++){
+		sum=sum+i;}
+	printf("Result: %d",sum);
+	
+	return 0;
+}
+
+03. Sum of even numbers upto n numbers
+
+#include <stdio.h>
+int main()
+{
+	int i,num,sum=0;
+	printf("Enter a number: ");
+	scanf("%d",&num);
+	for(i=2;i<=num;i++){
+		if(i%2==0){
+		sum=sum+i;}
+	}
+	printf("Result: %d",sum);
+
+	return 0;
+}
+
+04. Print the even numbers
+
+#include <stdio.h>
+int main()
+{
+	int i,limit;
+	printf("Enter a limit: ");
+	scanf("%d",&limit);
+	for(i=2;i<=limit;i=i+2){
+		printf("%d\n",i);}
+	return 0;
+}
+
+05. Check the number is prime number or not
+
+#include <stdio.h>
+int main()
+{
+	int i,num,flag=0;
+	printf("Enter a number: ");
+	scanf("%d",&num);
+	for(i=2;i<=num/2;i++){
+		if(num%i==0){
+		flag=1;
+		break;}
+	}
+	if(flag==0){
+	printf("Number is prime");}
+	else{
+	printf("Number is not a prime");}
+
+	return 0;
+}
+	
+
+06. Pattern
+*
+* *
+* * *
+* * * *
+* * * * *
+
+#include <stdio.h>
+int main()
+{
+	int i,j,row;
+	printf("Enter the no of rows: ");
+	scanf("%d",&row);
+	for(i=1;i<=row;i++){
+		for(j=1;j<=i;j++){
+			printf("* ");}
+		printf("\n");
+		}
+	return 0;
+}
+
+07. Break example
+
+#include <stdio.h>
+int main()
+{
+    int i;
+    for(i=0;i<5;i++){
+        printf("Hi");
+        printf("\n");
+        
+        if(i==3){
+            break;
+        }
+        printf("Hello");
+        printf("\n");
+    }
+    printf("Finished");
+    
+    return 0;
+}
+
+
+08. Continue example
+
+#include <stdio.h>
+int main()
+{
+    int i;
+    for(i=0;i<5;i++){
+        printf("Hi");
+        printf("\n");
+
+        if(i==3){
+            continue;
+        }
+        printf("Hello");
+        printf("\n");
+    }
+    printf("Finished");
+
+    return 0;
+}
+
+09. 
+* * * * *
+* * * *
+* * * 
+* * 
+*
+
+#include <stdio.h>
+int main()
+{
+	int i,j,row=5;
+	for(i=1;i<=row;i++){
+		for(j=row;j>=i;j--){
+			printf("* ");}
+		printf("\n");
+	}
+
+	return 0;
+}

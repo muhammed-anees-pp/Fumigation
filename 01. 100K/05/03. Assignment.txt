@@ -1,0 +1,110 @@
+Assignment Day 5
+
+01. Write a program to interchange the values of two arrays
+Program should accept an array from the user, swap the values of two arrays and display it on the console
+Eg: Output: Enter the size of arrays
+Input: 5
+Output: Enter the values of Array 1
+Input: 10, 20, 30, 40, 50
+Output: Enter the values of Array 2
+Input: 15, 25, 35, 45, 55
+Output: Arrays after swapping:
+Array1: 15, 25, 35, 45, 55
+Array2: 10, 20, 30, 40, 50
+
+#include <stdio.h>
+int main()
+{
+	int size,array1[100],array2[100],i,temp;
+	printf("Enter the size of arrays: ");
+	scanf("%d",&size);
+	printf("Enter the elements of Array 1: ");
+	for(i=0;i<size;i++){
+		scanf("%d",&array1[i]);}
+
+	printf("Enter the elements of Array 2: ");
+	for(i=0;i<size;i++){
+		scanf("%d",&array2[i]);}
+
+	for(i=0;i<size;i++){
+		temp=array1[i];
+		array1[i]=array2[i];
+		array2[i]=temp;}
+	
+	printf("Array1: ");
+	for(i=0;i<size;i++){
+		printf("%d\t",array1[i]);}
+	
+	printf("\nArray2: ");
+	for(i=0;i<size;i++){
+		printf("%d\t",array2[i]);}
+
+	return 0;
+}
+
+
+
+02. Write a program to find the number of even numbers in an array
+Program should accept an array and display the number of even numbers contained in that array
+Eg: Output: Enter the size of an array
+Input: 5
+Output: Enter the values of array
+Input: 11, 20, 34, 50, 33
+Output: Number of even numbers in the given array is 3
+
+#include <stdio.h>
+int main()
+{
+	int size,values[50],i,no=0;
+	printf("Enter the size of the array: ");
+	scanf("%d",&size);
+	printf("Enter the values of array: ");
+	for(i=0;i<size;i++){
+		scanf("%d",&values[i]);
+		if(values[i]%2==0){
+			no=no+1;}
+	}
+
+	printf("Number of even numbers in the given array is %d",no);
+	return 0;
+}
+
+
+
+03. Write a program to sort an array in descending order
+Program should accept and array, sort the array values in descending order and display it
+Eg: Output: Enter the size of an array
+Input: 5
+Output: Enter the values of array
+Input: 20, 10, 50, 30, 40
+Output: Sorted array:
+50, 40, 30, 20, 10
+
+#include <stdio.h>
+int main()
+{
+	int i,j,size,array[50],temp;
+	printf("Enter the size of the array: ");
+	scanf("%d",&size);
+	printf("Enter the values of array: ");
+	for(i=0;i<size;i++){
+		scanf("%d",&array[i]);}
+
+	for(i=0;i<size-1;i++){
+		for(j=i+1;j<size;j++){
+			if(array[i]<array[j]){
+				temp=array[i];
+				array[i]=array[j];
+				array[j]=temp;
+			}
+		}
+	}
+
+	printf("Sorted array (descending order): ");
+	for(i=0;i<size;i++){
+		printf("%d\t",array[i]);
+	}
+	
+	return 0;
+}
+			
