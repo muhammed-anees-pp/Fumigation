@@ -1,0 +1,118 @@
+01. Print Hello World
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+    
+}
+
+
+
+02. Input taking
+
+import java.util.Scanner;
+
+public class SampleInput {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+
+        System.out.println("Enter a number: ");
+        int a=s.nextInt();
+        System.out.println(a);
+    }
+}
+
+03. Sum of two numbers
+
+import java.util.Scanner;
+
+public class SumofTwo {
+    public static void main(String[] args) {
+        Scanner num=new Scanner(System.in);
+
+        System.out.println("Enter two numbers: ");
+        int num1=num.nextInt();
+        int num2=num.nextInt();
+
+        int sum=num1+num2;
+        System.out.println("Sum of two numbers is:"+sum);
+    }
+}
+
+04. If Sample
+
+import java.util.Scanner;
+
+public class IfSample {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number: ");
+
+        int num=sc.nextInt();
+
+        if(num>0){
+            System.out.println("Number is positive");
+        }
+        else{
+            System.out.println("Number is negative");
+        }
+    }
+}
+
+05. Sample function
+
+import java.util.Scanner;
+
+public class FunctionSample {
+    public static void main(String[] args) {
+        Scanner add=new Scanner(System.in);
+
+        System.out.println("Enter two numbers: ");
+        int num1=add.nextInt();
+        int num2=add.nextInt();
+
+        int result=sum(num1, num2);
+        System.out.println("Result is: "+result);
+    }
+    
+    static int sum(int number1, int number2){
+        int sum=number1+number2;
+        return sum;
+    }
+}
+
+
+06. Class 
+
+Main class:
+public class Class2 {
+    public static void main(String[] args) {
+        Sample3 obj1=new Sample3();
+        Sample3 obj2=new Sample3();
+
+        obj1.num1=15;
+        obj1.num2=25;
+        obj2.num1=30;
+        obj2.num2=50;
+
+        obj1.calculateSum();
+        obj2.calculateSum();
+
+        obj1.display();
+        obj2.display();
+    }
+}
+
+Sample class: 
+public class Sample3 {
+    int num1,num2,sum;
+    
+    void calculateSum(){
+        sum=num1+num2;
+    }
+
+    void display(){
+        System.out.println(sum);
+    }
+}

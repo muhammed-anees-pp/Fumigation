@@ -1,0 +1,56 @@
+# java is platform independent and c is depend
+
+#bit bite 
+
+# For giving out put
+
+System.out.println();
+
+
+# For input taking
+
+Scanner 
+
+Eg:
+Scanner s=new Scanner(System.in);
+int a=s.nextInt();
+
+# OOPs
+
+Object Oriented Programming
+
+Object: Final products (Soap)
+
+Class: Base model (Soap mould)
+
+
+# Class 
+Having
+1. Properties
+2. Methods (Functions)
+
+We can't store values on class, store in objects that created from the class.
+
+Eg:
+Main class:
+public class Hello {
+    public static void main(String[] args) {
+        Sample s1=new Sample();
+        Sample s2=new Sample();
+
+        s1.a=10;
+        s1.b=20;
+        s2.a=100;
+        s2.b=200;
+
+        System.out.println("S1a: "+s1.a +" S1b: "+s1.b);
+        System.out.println("S2a: "+s2.a +" S2b: "+s2.b);
+    }
+}
+
+
+Sample class:
+public class Sample {
+    int a;
+    int b;
+}

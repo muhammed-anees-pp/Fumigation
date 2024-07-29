@@ -1,0 +1,98 @@
+01. Write a java program to check whether a given number is prime or not
+Program should accept an input from the user and display whether the number is prime or not
+Eg: Output: Enter a number
+Input: 7
+Output: Entered number is a Prime number
+
+
+import java.util.Scanner;
+
+public class prime {
+    public static void main(String[] prime) {
+        Scanner num=new Scanner(System.in);
+        
+        System.out.println("Enter a number: ");
+        int number1=num.nextInt();
+
+        int flag=0;
+        for(int i=2;i<=number1/2;i++){
+            if(number1%i==0){
+                flag=1;
+            }
+        }
+
+        if(flag==0){
+            System.out.println("Prime");
+        }
+        else{
+            System.out.println("Not Prime");
+        }
+    }
+}
+
+
+02. Write a menu driven java program to do the basic mathematical operations such as addition, subtraction, multiplication and division (hint: use if else ladder or switch)
+Program should have 4 functions named addition(), substraction(), multiplication() and division()
+Should create a class object and call the appropriate function as user prefers in the main function
+
+import java.util.Scanner;
+
+public class Menu {
+    public static void main(String[] args) {
+        Scanner number=new Scanner(System.in);
+        Function operation1=new Function();
+
+        System.out.println("Enter two numbers: ");
+        int number1=number.nextInt();
+        int number2=number.nextInt();
+
+        System.out.println("1 for Addition \n2 for Substraction \n3 for Multiplication \n4 for Division \n:");
+        int choice=number.nextInt();
+
+        
+        switch (choice) {
+            case 1:
+                operation1.addition(number1,number2);
+                break;
+            case 2:
+                operation1.substraction(number1,number2);
+                break;
+            case 3:
+                operation1.multiplication(number1,number2);
+                break;
+            case 4:
+                operation1.division(number1,number2);
+                break;
+            default:
+                System.out.println("Wrong Entry!!");
+                break;
+        }
+    }
+}
+
+
+
+
+public class Function {
+    int result;
+
+    void addition(int num1, int num2){
+        result=num1+num2;
+        System.out.println("Sum: "+result);
+    }
+
+    void substraction(int num1, int num2){
+        result=num1-num2;
+        System.out.println("Substraction: "+result);
+    }
+
+    void multiplication(int num1, int num2){
+        result=num1*num2;
+        System.out.println("Multiple: "+result);
+    }
+
+    void division(int num1, int num2){
+        result=num1/num2;
+        System.out.println("Division: "+result);
+    }
+}

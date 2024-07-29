@@ -1,0 +1,26 @@
+# Static
+
+static doesn't having separate memory space. static method can call only static methods.
+
+# Constructor 
+Write it like method, but it doesn't have return type (void,int).
+
+
+# this keyword
+
+-Local variable 
+-Global Variable
+
+
+# Inheritance
+-Mulitiple inheritance in java
+
+# Polymorphism
+1. Method overloading
+2. Method overriding 
+
+
+# Super keyword
+
+
+
