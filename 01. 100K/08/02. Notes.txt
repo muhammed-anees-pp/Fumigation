@@ -22,5 +22,7 @@ Write it like method, but it doesn't have return type (void,int).
 
 # Super keyword
 
+# String
+
 
 
