@@ -1,0 +1,138 @@
+1. Low level language
+
+Machine Language: 
+
+- Programs written in the form of 0101
+- Depends on system architecture
+- No need to convert the language to machine code
+- Easy execution
+- Human can’t read the program
+
+Assembly Language: 
+
+- Readable by humans
+- We can use nonmonic (add,sub,move)
+- Need to change to machine code, so it is slower than machine language
+- Not portable, it is also machine depended
+
+1. High Level Language
+- Understandable by humans
+- Deals with functions, loops, etc ….
+- Slower, because it have to be converted into machine code
+- Easy to understand and maintain.
+- Concentrated on the usability of the program, not in the optimal program efficiency.
+
+Language translator:
+
+Assembler: Used to convert the assembly language programs to machine code or object code.
+
+Compiler: Taking the code and convert it into machine code completely. Then execute the program. Basically the conversion happening before the program execute. Translation-Linking-Loading. Error will get after compilation, debugging will be more tough. Note needed the program after compilation to run the program. It required more memory, because of object code create after compile.
+
+Eg:  C/C++
+
+Interpreter: It is not covert the complete code. It reads line by line, and execute. Conversion to machine code and execution doing parallelly. Basically conversion happening while execute or running. It will be slower. Error will get while running, debugging will be more easy. Every time the code is needed, because the it execute line by line. It required low memory.
+
+Eg: Python/Ruby
+
+Features of C
+
+1. High level Language
+2. Portable language
+3. Building functions and operators
+4. It is a structured and modular language
+5. Support of pointers
+6. Extensible language
+7. Compilation is fast 
+8. Case sensitive
+9. Platform depended language
+
+Structure of C Program
+
+1. Documentation section (Optional)
+
+Author, Date and Program by commanding
+
+1. Link section
+
+#include <stdio.h>,etc….
+
+1. Definition section (Optional)
+
+#define PI 3.14
+
+1. Global declaration section (Optional)
+2. Main section
+
+void main(){
+
+---
+
+---
+
+}
+
+1. Sub program section (Optional)
+
+Constants:
+
+1. Nuematic constant
+- Integer
+- Floating real constant
+1. Character constant 
+- Single character constant
+    
+    A-Z = 65 - 90
+    
+    a-z = 97 - 122
+    
+- String constant
+
+Variables: Storage to store value of data. It would having a meaningful name.
+
+Declaration: Datatype variable_name; 
+
+Eg: int a;
+
+Initialization: Datatype variable_name value;
+
+Eg: int a=10;
+
+Keywords and Identifiers
+
+Keywords:
+
+Having 32 keywords in c. Keywords are cannot be used as identifiers. All the keywords are in small case.
+
+1. int
+2. float
+3. break
+4. goto
+5. if 
+
+Identifiers:
+
+User defined names to array, variables, etc…. No special characters are allowed to identifiers, only letters,numbers, uderscore, etc
+
+Data Types
+
+Define the type of data that we are storing
+
+Primary Data Types (Build in data types)
+
+1. int (Take space of 1bytes to 4bytes)
+2. float (Take space of 4bytes)
+3. char (Take space of 1byte)
+4. double (Take space of 8bytes to 10bytes)
+5. void (Which cannot store data)
+
+Derived Data Types 
+
+1. Array
+2. Structure
+3. Union 
+4. Pointers
+
+User Defined Data Types
+
+1. jj
+2. Enumerated
