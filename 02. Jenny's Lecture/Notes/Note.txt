@@ -134,5 +134,100 @@ Derived Data Types
 
 User Defined Data Types
 
-1. jj
+1. Typedef
 2. Enumerated
+
+Operators
+1. Arithmetic Operators
++,-,*,/,%
+
+2. Relational Operators
+==,!=,<,>,<=,>=
+
+3. Logical Operators
+&&,||,!
+
+4. Bitwise Operators
+&-Bitwise AND,|-Bitwise OR,^-Bitwise XoR,~-Bitwise not,<<-Left shift,>>-Right shift
+
+5. Assignment Operators
+Left hand side will be a variable.
+=,+=,-=,*=,/=
+
+7. Increment & Decrement operator
+*++a,a++
+*--a,a--
+
+Operators Precedence and Associativity
+The concept of operator precedence and associativity in C helps in determining which operators will be given priority when there are multiple operators in the expression. It is very common to have multiple operators in C language and the compiler first evaluates the operator with higher precedence. It helps to maintain the ambiguity of the expression and helps us in avoiding unnecessary use of parenthesis.
+
+scanf-formatted input function
+printf-formatted input function
+
+Unformatted input functions
+didn't use any format specifiers (%d,%c,etc..)
+getchar() - taking character 
+getch() - 
+getche() - immediately going to the next line after enter a char
+gets() - for taking a complete string
+
+Unformatted output functions
+didn't use any format specifiers here also
+putchar() - print single character
+putch() - print single character
+puts() - print complete string
+
+Control Statements
+1. if
+2. if else
+3. if else if ladder
+4. nested if
+5. switch
+
+Loops
+1. for loop
+2. while loop
+3. Do while loop
+
+break and continue 
+
+Array
+Store collection of homogeneous data 
+
+Strings 
+Array of characters
+
+strlen-find length of the function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
