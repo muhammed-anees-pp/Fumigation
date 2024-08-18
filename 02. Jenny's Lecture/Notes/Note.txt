@@ -199,31 +199,15 @@ Array of characters
 
 strlen-find length of the function
 
+Functions
+*Call by value
+*Call by reference
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+4 types of functions
+1. No Argument without Return Type
+2. No Argument with Return Type
+3. With Argument without Return Type
+4. With Argument with Return Type
 
 
 

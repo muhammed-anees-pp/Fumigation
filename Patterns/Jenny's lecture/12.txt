@@ -1,0 +1,34 @@
+Q12 
+
+A 
+A B
+A B C D
+A B C D E
+
+
+Ans:
+
+#include <stdio.h>
+int main(){
+	int i,j,row=5;
+	for(i=1;i<=row;i++){
+		for(j=1;j<=i;j++){
+			printf("%c ",64+j);
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
+
+
+
+
+Workout:
+
+i=1 j=1 
+i=2 j=1 2
+i=3 j=1 2 3
+i=4 j=1 2 3 4
+i=5 j=1 2 3 4 5
+ 
