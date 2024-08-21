@@ -1,0 +1,218 @@
+## Properties
+1. Object-Oriented
+    - Explanation: Java is based on objects and classes, allowing you to model real-world entities and reuse code through inheritance and polymorphism.
+2. Platform-Independent
+    - Explanation: Java code runs on any device with a Java Virtual Machine (JVM), making it "write once, run anywhere."
+3. Simple
+    - Explanation: Java is easy to learn and use, with a clean syntax similar to C++, but without complex features like pointers.
+4. Robust
+    - Explanation: Java has strong memory management and error-handling features, making it reliable and less prone to crashes.
+5. Secure
+    - Explanation: Java has built-in security features like bytecode verification and a security manager to protect against malicious code.
+6. Multithreaded
+    - Explanation: Java supports multiple threads of execution, allowing programs to perform many tasks at once, improving performance.
+7. Distributed
+    - Explanation: Java is designed for networked applications, with APIs for working with remote objects and creating web services.
+8. High Performance
+    - Explanation: Java is optimized with Just-In-Time (JIT) compilers that convert bytecode into fast native machine code at runtime.
+9. Dynamic
+    - Explanation: Java can adapt to changes at runtime, loading classes as needed and allowing for more flexible programs.
+10. Portable
+- Explanation: Java programs can run on any system with a JVM, without needing to be recompiled, making them highly portable.
+
+## Variables
+Variables are containers for storing data values.
+
+Declaration of variable:
+data_type variableName = value;
+
+## Data Types
+I. Primitive data types
+
+A primitive data type specifies the size and type of variable values, and it has no additional methods.
+There are eight primitive data types in Java:
+
+1. byte
+Stores whole numbers from -128 to 127
+Example:
+
+byte myNum = 100;
+System.out.println(myNum);
+
+2. short
+Stores whole numbers from -32,768 to 32,767
+Example:
+
+short myNum = 5000;
+System.out.println(myNum);
+
+3. int
+Stores whole numbers from -2,147,483,648 to 2,147,483,647
+Example:
+
+int myNum = 100000;
+System.out.println(myNum);
+
+4. long
+Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+Example:
+
+long myNum = 15000000000L;
+System.out.println(myNum);
+
+5. float
+Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+Example:
+
+float myNum = 5.75f;
+System.out.println(myNum);
+
+6. double
+Stores fractional numbers. Sufficient for storing 15 decimal digits
+Example:
+
+double myNum = 19.99d;
+System.out.println(myNum);
+
+7. boolean
+Stores true or false values
+Example:
+
+boolean isJavaFun = true;
+boolean isFishTasty = false;
+System.out.println(isJavaFun);     // Outputs true
+System.out.println(isFishTasty);   // Outputs false
+
+
+8. char
+Stores a single character/letter or ASCII values. The character must be surrounded by single quotes, like 'A' or 'c'
+Example:
+
+char myGrade = 'B';
+System.out.println(myGrade);
+
+
+II. Non Primitive data types
+
+Non-primitive data types are called reference types because they refer to objects.
+
+1. Strings
+The String data type is used to store a sequence of characters (text). String values must be surrounded by double quotes.
+Example:
+
+String greeting = "Hello World";
+System.out.println(greeting);
+
+2. Arrays:
+Store multiple data 
+Example:
+
+int[] numbers = {1, 2, 3, 4};
+
+3. Classes and objects
+4. Interfaces
+
+## Methods
+- A method is a block of code which only runs when it is called.
+- You can pass data, known as parameters, into a method.
+- Methods are used to perform certain actions, and they are also known as functions.
+- Why use methods?
+  To reuse code: define the code once, and use it many times.
+Example:
+
+public class Main {
+  static void myMethod() {
+    // code to be executed
+  }
+}
+
+Explanation:
+- myMethod() is the name of the method
+- static means that the method belongs to the Main class and not an object of the Main class.
+- void means that this method does not have a return value.
+
+Parameters and Arguments:
+- Information can be passed to methods as a parameter. Parameters act as variables inside the method.
+- Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+
+Example:
+
+public class Main {
+  static void myMethod(String fname) {
+    System.out.println(fname + " Refsnes");
+  }
+
+  public static void main(String[] args) {
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+  }
+}
+
+- When a parameter is passed to the method, it is called an argument. So, from the example above: fname is a parameter, while Liam, Jenny and Anja are arguments.
+
+
+Return values:
+- Used the void keyword in all examples, which indicates that the method should not return a value.
+- If you want the method to return a value, you can use a primitive data type (such as int, char, etc.) instead of void, and use the return keyword inside the method.
+
+
+Method Overloading:
+- With method overloading, multiple methods can have the same name with different parameters.
+-Multiple methods can have the same name as long as the number and/or type of parameters are different.
+Example:
+
+
+static int plusMethod(int x, int y) {
+  return x + y;
+}
+
+static double plusMethod(double x, double y) {
+  return x + y;
+}
+
+public static void main(String[] args) {
+  int myNum1 = plusMethod(8, 5);
+  double myNum2 = plusMethod(4.3, 6.26);
+  System.out.println("int: " + myNum1);
+  System.out.println("double: " + myNum2);
+}
+
+Recursion:
+-Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
+Example:
+
+public class Main {
+  public static void main(String[] args) {
+    int result = sum(10);
+    System.out.println(result);
+  }
+  public static int sum(int k) {
+    if (k > 0) {
+      return k + sum(k - 1);
+    } else {
+      return 0;
+    }
+  }
+}
+
+Halting Condition:
+Just as loops can run into the problem of infinite looping, recursive functions can run into the problem of infinite recursion. Infinite recursion is when the function never stops calling itself. Every recursive function should have a halting condition, which is the condition where the function stops calling itself.
+
+
+## OOPs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
