@@ -1,0 +1,19 @@
+Q4:
+
+* * *
+* * * * * *
+* * * * * * * * *
+
+Ans:
+
+#include <stdio.h>
+int main(){
+	int i,j,row=3;
+	for(i=1;i<=row;i++){
+		for(j=1;j<=i*3;j++){
+			printf("* ");
+		}
+		printf("\n");
+	}
+	return 0;
+}
