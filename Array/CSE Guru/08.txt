@@ -3,8 +3,8 @@ Q8: Decimal to binary conversion
 Ans:
 
 #include <stdio.h>
-
 void convert(int);
+
 int main(){
 	int number;
 	printf("Enter a number: ");

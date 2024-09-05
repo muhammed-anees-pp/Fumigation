@@ -1,0 +1,51 @@
+Q11: 2nd smallest element in an array
+
+Ans:
+
+
+#include <stdio.h> 
+#include <limits.h>
+int main(){
+	int limit,i,num[100],smallN1=INT_MAX,smallN2=INT_MAX;
+	printf("Enter the limit of the array: ");
+	scanf("%d",&limit);
+	printf("Enter the elements of array: ");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+	
+	for(i=0;i<limit;i++){
+		if(num[i]<smallN1){
+			smallN2=smallN1;
+			smallN1=num[i];
+		}
+
+		else if(num[i]<smallN2 && num[i]>smallN1){
+			smallN2=num[i];
+		}
+	}
+	
+	printf("Smallest element in the array is %d",smallN1);
+	printf("\n2nd smallest element in the array is %d",smallN2);
+
+	return 0;	
+}
+
+
+Working:
+30 25 45 60 92 83
+
+Iteration 1 (i=0)
+num[0]=30 < smallN1 -true | smallN2=smallN1 & smallN1=30
+
+Iteration 2 (i=1)
+num[1]=25 < smallN1=30 -true | smallN2=30 & smallN1=25
+
+Iteration 3 (i=2)
+num[2]=45 < smallN1=25 -false | num[2]=45 < smallN2=30 -false
+
+Iteration 4 (i=3)
+num[3]=60 < smallN1=25 -false | num[3]=60 < smallN2=30 -false
+
+etc...
+

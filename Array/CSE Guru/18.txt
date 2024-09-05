@@ -1,0 +1,29 @@
+Q18: Sum of the elements in an array (Positive and odd negative)
+
+Ans:
+
+#include <stdio.h>
+int main(){
+	int limit,num[100],i,sumPositive=0,sumNegative=0;
+	printf("Enter the limit of the array: ");
+	scanf("%d",&limit);
+	printf("Enter the array elements: ");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+	
+	for(i=0;i<limit;i++){
+		if(num[i]>0){
+			sumPositive=sumPositive+num[i];
+		}
+
+		else{
+			sumNegative=sumNegative+num[i];	
+		}
+	}
+
+	printf("Sum of positive numbers is %d",sumPositive);
+	printf("\nSum of negative numbers is %d",sumNegative);
+
+	return 0;
+}
