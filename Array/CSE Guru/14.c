@@ -1,6 +1,4 @@
-Q14: Swapping every pair of adjacent elements in an array
-
-Ans:
+//Swapping every pair of adjacent elements in an array
 
 #include <stdio.h>
 int main(){
@@ -27,7 +25,7 @@ int main(){
 	return 0;
 }
 
-
+/*
 Working:
 
 1 2 3 4 5 6
@@ -43,3 +41,4 @@ Array: 2 1 4 3 5 6
 Iteration 3 (i=4)
 temp=num[4](5) | num[4]=num[4+1](6) | num[5]=temp(5)
 Array: 2 1 4 3 6 5
+*/

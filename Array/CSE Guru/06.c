@@ -1,6 +1,4 @@
-Q6: Reversing only the first half of the element
-
-Ans:
+//Reversing only the first half of the element
 
 #include <stdio.h>
 int main(){
@@ -26,14 +24,15 @@ int main(){
 	return 0;
 }
 
-
+/*
 Workout:
 
 30 20 40 60 90 80
 
 40 20 30 60 90 80
+*/
 
-Other way:
+//Other way:
 
 #include <stdio.h>
 int main(){

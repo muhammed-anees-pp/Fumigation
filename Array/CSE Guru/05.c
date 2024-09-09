@@ -1,6 +1,4 @@
-Q5: Reversing the elements in an array
-
-Ans:
+//Reversing the elements in an array
 
 #include <stdio.h>
 int main(){
@@ -31,10 +29,10 @@ int main(){
 	return 0;
 }
 
-
+/*
 Note: 
 The loop condition to i < limit / 2, the array only swaps elements up to the middle, avoiding double reversal.
-
+*/
 
 
 

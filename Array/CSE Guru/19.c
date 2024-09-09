@@ -1,6 +1,4 @@
-Q19: Sum of the elements in an array (Prime numbers)
-
-Ans:
+//Sum of the elements in an array (Prime numbers)
 
 #include <stdio.h>
 int main(){

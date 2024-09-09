@@ -1,6 +1,4 @@
-Q2: Add an element at the given index
-
-Ans:
+//Add an element at the given index
 
 #include <stdio.h>
 int main(){
@@ -32,7 +30,7 @@ int main(){
 	return 0;
 }
 
-
+/*
 Working:
 30 20 40 60 90 80
 
@@ -40,4 +38,4 @@ I want to add 50 at 3rd position
 so index will be 2
 30 20 50 40 60 90 80
 
-
+*/

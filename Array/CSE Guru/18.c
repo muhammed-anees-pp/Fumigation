@@ -1,6 +1,4 @@
-Q18: Sum of the elements in an array (Positive and odd negative)
-
-Ans:
+//Sum of the elements in an array (Positive and odd negative)
 
 #include <stdio.h>
 int main(){

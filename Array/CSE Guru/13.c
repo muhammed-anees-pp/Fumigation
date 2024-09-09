@@ -1,6 +1,4 @@
-Q13: Swap any 2 elements in an array using pointers
-
-Ans:
+//Swap any 2 elements in an array using pointers
 
 #include <stdio.h>
 int main(){
@@ -25,7 +23,7 @@ int main(){
 }
 
 
-Other way:
+//Other way:
 
 #include <stdio.h>
 int main(){

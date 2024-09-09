@@ -1,6 +1,4 @@
-Q7: Reversing only the second half of the element
-
-Ans:
+//Reversing only the second half of the element
 
 #include <stdio.h>
 int main(){
@@ -27,7 +25,7 @@ int main(){
 	return 0;
 }
 
-
+/*
 Workout:
 
 Breaking Down the Code for limit = 10
@@ -61,4 +59,4 @@ The resulting array after reversing the second half is:
 Explanation:
 The code effectively reverses the second half of the array by repeatedly swapping elements from the beginning and end of that half until the indices meet. In this case, with limit = 10, the second half starts at index 5 (inclusive) and ends at index 9 (inclusive).
 
-
+*/

@@ -1,6 +1,4 @@
-Q1: Print all the array elements one by one.
-
-Ans:
+//Print all the array elements one by one.
 
 #include <stdio.h>
 int main(){
@@ -20,6 +18,7 @@ int main(){
 	return 0;
 }
 
+/*
 Working:
 # value intake
 when i=0, value going to value[0]=10
@@ -35,3 +34,4 @@ etc...
 
 final out:
 Array: 10 20 30
+*/

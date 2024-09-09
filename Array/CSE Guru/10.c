@@ -1,6 +1,4 @@
-Q10: 2nd largest element in an array
-
-Ans:
+//2nd largest element in an array
 
 #include <stdio.h>
 int main(){
@@ -30,7 +28,7 @@ int main(){
 	return 0;
 }
 
-
+/*
 Workout:
 30 25 45 60 92 83
 
@@ -66,3 +64,5 @@ Now: leastValue1 = 92, leastValue2 = 83
 
 Note:
 instead of using zero in least values, we can also use the term INT_MIN. When using the term have to declare #include <limits.h>
+
+*/

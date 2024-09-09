@@ -1,6 +1,4 @@
-Q12: Repeated element and count
-
-Ans:
+//Repeated element and count
 
 #include <stdio.h>
 int main(){
@@ -33,6 +31,7 @@ int main(){
 	return 0;
 }
 
+/*
 Working:
 
 30 30 20 30 50 20
@@ -60,3 +59,4 @@ num[3]=0 and num[4]=50 => num[3]==0 | continue
 
 Iteration 5 (i=4)
 num[4]=50 and num[5]=0 => num[4]==num[5] false
+*/

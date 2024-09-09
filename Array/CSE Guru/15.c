@@ -1,6 +1,4 @@
-Q15: Rotate the array elements k times. (Left Rotation)
-
-Ans:
+//Rotate the array elements k times. (Left Rotation)
 
 #include <stdio.h>
 int main(){
@@ -30,6 +28,7 @@ int main(){
 	return 0;
 }
 
+/*
 Working:
 
 30 20 40 50 60 80
@@ -48,3 +47,4 @@ j=5 => End loop
 num[5]=temp => num[5]=30
 
 Array: 20 40 50 60 80
+*/

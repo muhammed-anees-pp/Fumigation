@@ -1,6 +1,4 @@
-Q17: Sum of the elements in an array (Even and odd numbers)
-
-Ans:
+//Sum of the elements in an array (Even and odd numbers)
 
 #include <stdio.h>
 int main(){

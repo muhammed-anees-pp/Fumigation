@@ -1,6 +1,4 @@
-Q3: Deletes an element at the given index.
-
-Ans:
+//Deletes an element at the given index.
 
 #include <stdio.h>
 int main(){
@@ -25,11 +23,11 @@ int main(){
 	return 0;
 }
 
-
-
+/*
 Working:
 30 20 40 60 90 80
 
 30 40 60 90 80
 
 Re arrange the array to the deleted position
+*/

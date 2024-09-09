@@ -1,6 +1,4 @@
-Q8: Decimal to binary conversion
-
-Ans:
+//Decimal to binary conversion
 
 #include <stdio.h>
 void convert(int);
@@ -31,7 +29,7 @@ printf("%d ",binaryValue[i]);
 }
 
 
-Another way:
+//Another way:
 
 #include <stdio.h>
 int main(){
@@ -50,7 +48,7 @@ int main(){
 	return 0;
 }
 
-
+/*
 Workout:
 
 Example;
@@ -65,4 +63,4 @@ number=25
 
 just printing the reminder in the reverse order, means. Actual order of binary form 10011.
 Have to be printed like 11001
-
+*/

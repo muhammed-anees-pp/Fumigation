@@ -1,7 +1,4 @@
-Q11: 2nd smallest element in an array
-
-Ans:
-
+//2nd smallest element in an array
 
 #include <stdio.h> 
 #include <limits.h>
@@ -31,7 +28,7 @@ int main(){
 	return 0;	
 }
 
-
+/*
 Working:
 30 25 45 60 92 83
 
@@ -48,4 +45,4 @@ Iteration 4 (i=3)
 num[3]=60 < smallN1=25 -false | num[3]=60 < smallN2=30 -false
 
 etc...
-
+*/

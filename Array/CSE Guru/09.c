@@ -1,6 +1,4 @@
-Q9: Printing even numbers and odd numbers separately
-
-Ans:
+//Printing even numbers and odd numbers separately
 
 #include <stdio.h>
 int main(){
@@ -37,7 +35,7 @@ int main(){
 	return 0;
 }
 
-
+/*
 Workout:
 
 limit=6 Array: 30 25 45 60 92 83
@@ -56,3 +54,4 @@ iteration3
 i=2,2<6 condition true
 value[2]%2==0 | 45%2!==0 condition false, so work the else part
 oddValues[1]=45, odd++, odd==2;
+*/
