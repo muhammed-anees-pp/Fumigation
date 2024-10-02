@@ -1,0 +1,31 @@
+/*
+
+A B C D E
+B C D E
+C D E
+D E
+E
+
+*/
+
+#include <stdio.h>
+int main(){
+	int i,j,row=5;
+	for(i=1;i<=row;i++){
+		for(j=i;j<=row;j++){
+			printf("%c ",64+j);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+/*
+Working:
+
+Iteration 1 (i=1)
+j=1,2,3,4,5 (A B C D E)
+
+Iteration 2 (i=2)
+j=2,3,4,5 (B C D E)
+*/

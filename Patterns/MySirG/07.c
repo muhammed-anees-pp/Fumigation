@@ -1,0 +1,37 @@
+/*
+
+*********
+**** ****
+***   ***
+**     **
+*       *
+
+*/
+
+#include <stdio.h>
+int main(){
+	int i,j,row=5;
+	for(i=1;i<=row;i++){
+		for(j=1;j<=2*row-1;j++){
+			if(j<=row+1-i || j>=row-1+i){
+				printf("*");
+			}
+			else{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+/*
+Working:
+
+i	j		j(d)		j<=row+1-i || j>=row-1+i
+1	123456789	j<=5 || j>=5	
+2	12346789	j<=4 || j>=6
+3	123789		j<=3 || j>=7
+4	1289		j<=2 || j>=8
+5	19		j<=1 || j>=9
+*/
