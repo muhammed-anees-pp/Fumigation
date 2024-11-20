@@ -1,0 +1,21 @@
+//Printing in reversing order
+
+Ans:
+
+#include <stdio.h>
+int main(){
+	int i,limit,values[100];
+	printf("Enter the limit of array: ");
+	scanf("%d",&limit);
+	printf("Enter the array values\n");
+	for(i=0;i<limit;i++){
+		scanf("%d",&values[i]);
+	}
+	
+	printf("Array in reversing order:\n");
+	for(i=limit-1;i>=0;i--){
+		printf("%d ",values[i]);
+	}
+
+	return 0;
+}

@@ -1,0 +1,47 @@
+/*
+
+* * * 3
+*
+* 
+* * * * * * 6
+*
+* 
+* * * * * * * * * 9	
+*
+*
+
+*/
+
+#include <stdio.h>
+int main(){
+	int row=3,i,j,k;
+	for(i=1;i<=row;i++){
+		for(j=1;j<=i*3;j++){
+			printf("* ");
+		}
+		printf("\n");
+		for(k=1;k<=2;k++){
+			printf("*\n");
+		}
+	}
+	
+	
+	return 0;
+}
+
+
+/*
+Working:
+
+Iteration 1 (i=1)
+j=1 2 3
+k=1 2
+
+Iteration 2 (i=2)
+j=1 2 3 4 5 6
+k=1 2
+
+Iteration 3 (i=3)
+j=1 2 3 4 5 6 7 8 9
+k=1 2
+*/

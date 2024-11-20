@@ -1,0 +1,50 @@
+//Rotate the array elements k times. (Right Rotation)
+
+#include <stdio.h>
+int main(){
+	int limit,num[100],rotate,temp,i,j;
+	printf("Enter the limit of the array: ");
+	scanf("%d",&limit);
+	printf("Enter the array elements: ");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+	printf("How many times you want to rotate: ");
+	scanf("%d",&rotate);
+	
+	for(i=1;i<=rotate;i++){
+		temp=num[limit-1];
+		for(j=limit-1;j>=1;j--){
+			num[j]=num[j-1];
+		}
+		num[0]=temp;		
+	}
+	
+	printf("Array: ");
+	for(i=0;i<limit;i++){
+		printf("%d ",num[i]);
+	}
+
+	return 0;
+}
+
+/*
+Working:
+30 20 40 50 60 80
+
+Rotation=1
+
+Iteration 1 (i=1)
+temp=num[5](80)
+
+j=5 => num[5]=num[4](60) | num[5]=60
+j=4 => num[4]=num[3](50) | num[4]=50
+j=3 => num[3]=num[2](40) | num[3]=40
+j=2 => num[2]=num[1](20) | num[2]=20
+j=1 => num[1]=num[0](30) | num[1]=30
+j=0 => fail
+
+num[0]=temp => num[0]=80
+
+Array: 80 30 20 40 50 60
+*/ 

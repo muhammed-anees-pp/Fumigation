@@ -1,0 +1,41 @@
+//Add an element at the given index
+
+#include <stdio.h>
+int main(){
+	int i,limit,values[100],position,value;
+	printf("Enter the limit of the array: ");
+	scanf("%d",&limit);
+	printf("Enter the array elements: \n");
+	for(i=0;i<limit;i++){
+		scanf("%d",&values[i]);
+	}
+
+	printf("Enter the position need to add value: ");
+	scanf("%d",&position);
+	
+	printf("Enter the value want to add: ");
+	scanf("%d",&value);
+	
+	for(i=limit;i>=position-1;i--){
+		values[i+1]=values[i];
+	}
+	
+	values[position-1]=value;
+	
+	printf("Updated array: \n");
+	for(i=0;i<=limit;i++){
+		printf("%d ",values[i]);
+	}
+
+	return 0;
+}
+
+/*
+Working:
+30 20 40 60 90 80
+
+I want to add 50 at 3rd position
+so index will be 2
+30 20 50 40 60 90 80
+
+*/

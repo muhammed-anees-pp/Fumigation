@@ -1,0 +1,45 @@
+#Escape Sequence
+1-\n : For jumping to next line
+
+# Control statements
+01-if else
+02-Nested if
+03-else if ladder
+04-switch
+
+#if
+if(condition){
+-------------}
+else{--------}
+
+#Nested if
+if(condition){
+if(condition){
+------------}}
+
+if(condition){
+if(condition){
+------------}}
+
+#else if ladder
+if(condition 1){
+-------------}
+else if(condition 2){
+-------------}
+else if(condition 3){
+-------------}
+else{--------}
+
+
+#switch
+switch(variable){
+	case 1:
+	--------;
+	break;
+	case 2:
+	--------;
+	break;
+	default:
+	--------;
+	
+	}

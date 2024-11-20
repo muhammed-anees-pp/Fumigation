@@ -1,0 +1,145 @@
+01. Basic input and output in array
+
+#include <stdio.h>
+int main()
+{
+	int i,num[5];
+	printf("Enter 5 numbers: ");
+	for(i=0;i<5;i++){
+		scanf("%d",&num[i]);
+	}
+
+	printf("Numbers are:\t");
+	for(i=0;i<5;i++){
+		printf("%d\t",num[i]);
+	}
+	
+	return 0;
+}
+
+02. Taking limit from the user
+
+#include <stdio.h>
+int main()
+{
+	int i,limit,num[100];
+	printf("Enter the limit of array: ");
+	scanf("%d",&limit);
+	printf("Enter numbers:\n");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+	
+	printf("Numbers are:\t");
+	for(i=0;i<limit;i++){
+		printf("%d\t",num[i]);
+	}
+
+	return 0;
+}
+
+03. Sum of numbers
+
+#include <stdio.h>
+int main()
+{
+	int i,limit,num[100],sum=0;
+	printf("Enter the size of array: ");
+	scanf("%d",&limit);
+	printf("Enter the numbers:\n");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+	
+	for(i=0;i<limit;i++){
+		sum=sum+num[i];
+	}
+	printf("Sum:%d",sum);
+	return 0;
+}
+
+04. same problem in different type
+
+#include <stdio.h>
+int main()
+{
+	int i,limit,num[100],sum=0;
+	printf("Enter the size of array: ");
+	scanf("%d",&limit);
+	printf("Enter the numbers:\n");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+		sum=sum+num[i];
+	}
+	
+	printf("Sum:%d",sum);
+	return 0;
+}
+
+05. Search in array
+
+#include <stdio.h>
+int main()
+{
+	int limit,i,num[100],search,flag=0;
+	printf("Enter the limit of array: ");
+	scanf("%d",&limit);
+	printf("Enter the numbers:\n");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+
+	printf("Enter the search key: ");
+	scanf("%d",&search);
+
+	for(i=0;i<limit;i++){
+		if(search==num[i]){
+			flag=1;
+			break;
+		}
+	}
+	
+	if(flag==1){
+	printf("%d found at the %d position",search,i+1);	
+	}
+	else{
+	printf("Not found %d in the array",search);}
+	return 0;
+}
+
+06. Selection sorting
+
+#include <stdio.h>
+int main()
+{
+	int limit,i,j,temp,num[100];
+	printf("Enter the limit of array: ");
+	scanf("%d",&limit);
+	printf("Enter the array elements: ");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+
+	printf("Array elements are:\t");
+	for(i=0;i<limit;i++){
+		printf("%d\t",num[i]);
+	}//Only given for undrestanding the working
+
+	for(i=0;i<limit-1;i++){
+		for(j=i+1;j<limit;j++){
+			if(num[i]>num[j]){
+				temp=num[i];
+				num[i]=num[j];
+				num[j]=temp;
+			}
+		}
+	}
+	
+	printf("\nSorted array:\t");
+	for(i=0;i<limit;i++){
+		printf("%d\t",num[i]);
+	}
+
+	return 0;
+}
+

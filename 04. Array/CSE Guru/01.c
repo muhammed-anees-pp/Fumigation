@@ -1,0 +1,37 @@
+//Print all the array elements one by one.
+
+#include <stdio.h>
+int main(){
+	int i,limit,values[100];
+	printf("Enter the limit of the array: ");
+	scanf("%d",&limit);
+	printf("Enter the values of array\n");
+	for(i=0;i<limit;i++){
+		scanf("%d",&values[i]);
+	}
+	
+	printf("Array: ");
+	for(i=0;i<limit;i++){
+		printf("%d ",values[i]);
+	}
+
+	return 0;
+}
+
+/*
+Working:
+# value intake
+when i=0, value going to value[0]=10
+when i=1, value going to value[1]=20
+when i=1, value going to value[2]=30
+etc....
+
+# print out
+when i=0, value[0]=10
+when i=1, value[1]=20
+when i=2, value[2]=30
+etc...
+
+final out:
+Array: 10 20 30
+*/

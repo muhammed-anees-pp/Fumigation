@@ -1,0 +1,8 @@
+#Compailation
+Human readable code to machine code
+
+#IDE
+Integrated Development Environment
+Coding platform
+
+Eg: VS Code,Eclipse

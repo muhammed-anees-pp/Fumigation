@@ -1,0 +1,76 @@
+Assignment Day 4
+
+01. Write a program to print the multiplication table of given number
+Accept an input from the user and display its multiplication table
+Eg: 
+Output: Enter a number
+Input: 5
+Output: 
+1 x 5 = 5
+2 x 5 = 10
+3 x 5 = 15
+4 x 5 = 20
+5 x 5 = 25
+6 x 5 = 30
+7 x 5 = 35
+8 x 5 = 40
+9 x 5 = 45
+10 x 5 = 50
+
+#include <stdio.h>
+int main()
+{	
+	int num,i,mult;
+	printf("Enter a number: ");
+	scanf("%d",&num);
+	for(i=1;i<=10;i++){
+		mult=i*num;
+		printf("%d x %d = %d\n",i,num,mult);
+		}
+	return 0;
+}
+
+
+02. Write a program to find the sum of all the odd numbers for a given limit
+Program should accept an input as limit from the user and display the sum of all the odd numbers within that limit
+For example if the input limit is 10 then the result is 1+3+5+7+9 = 25
+Output: Enter a limit
+Input: 10
+Output: Sum of odd numbers = 25 
+
+#include <stdio.h>
+int main()
+{
+	int limit,i,sum=0;
+	printf("Enter a limit: ");
+	scanf("%d",&limit);
+	for(i=1;i<=limit;i++){
+		if(i%2==1){
+		sum=sum+i;}
+		}
+	printf("Sum of odd numbers = %d",sum);
+	
+	return 0;
+}
+
+
+03. Write a program to print the following pattern (hint: use nested loop)
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+#include <stdio.h>
+int main()
+{
+	int i,j,row=5;
+	for(i=1;i<=row;i++){
+		for(j=1;j<=i;j++){
+		printf("%d ",j);}
+		printf("\n");
+	}
+
+	return 0;
+}	
+

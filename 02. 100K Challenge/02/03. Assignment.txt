@@ -1,0 +1,68 @@
+Assignment Day 2
+
+01. Accept a char input from the user and display it on the console
+
+#include <stdio.h>
+int main()
+{
+	char c;
+	printf("Enter a character: ");
+	scanf("%c",&c);
+	printf("You have entered a character %c",c);
+
+	return 0;
+}
+
+02. Accept two inputs from the user and output its sum
+Variable
+Data Type
+Number 1
+Integer
+Number 2
+Float
+Sum
+Float
+
+#include <stdio.h>
+int main()
+{
+	int num1;
+	float num2,sum;
+	printf("Enter two numbers: ");
+	scanf("%d%f",&num1,&num2);
+	sum=num1+num2;
+	printf("Sum of two numbers is: %f",sum);
+
+	return 0;
+}
+
+03. Write a program to find the simple interest.
+Program should accept 3 inputs from the user and calculate simple interest for the given inputs. Formula: SI=(P*R*n)/100)
+Variable
+Data Type
+Principal amount (P)
+Integer
+Interest rate (R)
+Float
+Number of years (n)
+Float
+Simple Interest (SI)
+Float
+
+#include <stdio.h>
+int main()
+{
+	int pa;
+	float r,n,si;
+	printf("Enter the principle amount: ");
+	scanf("%d",&pa);
+	printf("Enter the interest rate: ");
+	scanf("%f",&r);
+	printf("Enter the no of years: ");
+	scanf("%f",&n);
+	si=((pa*r*n)/100);
+	printf("Simple interest for the principle amount of %d is %f",pa,si);
+
+	return 0;
+}
+	

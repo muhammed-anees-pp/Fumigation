@@ -1,0 +1,28 @@
+//Sum of the elements in an array (Even and odd numbers)
+
+#include <stdio.h>
+int main(){
+	int limit,num[100],i,sumEven=0,sumOdd=0;
+	printf("Enter the limit of the array: ");
+	scanf("%d",&limit);
+	printf("Enter the array elements: ");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+	
+	for(i=0;i<limit;i++){
+		if(num[i]%2==0){
+			sumEven=sumEven+num[i];
+		}
+		else{
+			sumOdd=sumOdd+num[i];
+		}
+	}
+
+	printf("Sum of even numbers: %d",sumEven);
+	printf("\nSum of odd numbers: %d",sumOdd);
+
+
+	return 0;
+}
+

@@ -1,0 +1,48 @@
+//Swap any 2 elements in an array using pointers
+
+#include <stdio.h>
+int main(){
+	int limit,i,num[100],temp;
+	printf("Enter the limit of the array: ");
+	scanf("%d",&limit);
+	printf("Enter the array elements: ");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+
+	temp=*(num+1);
+	*(num+1)=*(num+4);
+	*(num+4)=temp;
+	printf("Array: ");
+	for(i=0;i<limit;i++){
+		printf("%d ",num[i]);
+	}
+
+
+	return 0;
+}
+
+
+//Other way:
+
+#include <stdio.h>
+int main(){
+	int limit,i,num[100],temp,*p,p=num;
+	printf("Enter the limit of the array: ");
+	scanf("%d",&limit);
+	printf("Enter the array elements: ");
+	for(i=0;i<limit;i++){
+		scanf("%d",&num[i]);
+	}
+	
+	temp=*(p+1);
+	*(p+1)=*(p+4);
+	*(p+4)=temp;
+
+	printf("Array: ");
+	for(i=0;i<limit;i++){
+		printf("%d",num[i]);
+	}
+
+	return 0;
+}

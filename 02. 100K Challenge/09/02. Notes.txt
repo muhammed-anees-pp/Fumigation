@@ -1,0 +1,43 @@
+# Abstraction
+Abstraction in Java is a concept where we hide complex implementation details and show only the essential features of an object. It's like using a TV remote: you know which button to press to change the channel, but you don't need to know how the remote sends signals to the TV.
+
+# Interface
+Interfaces are similar to abstract classes but are used to define a contract for what a class can do, without dictating how it should do it. Classes that implement an interface must provide an implementation for all the methods declared in the interface.
+
+# Package
+In Java, a package is a namespace that organizes a set of related classes and interfaces. By grouping these elements together, packages help manage large codebases, prevent naming conflicts, and control access to classes and interfaces. A package is declared at the top of a Java source file using the package keyword, followed by the package name. Packages also facilitate modular programming by allowing the distribution of classes and interfaces in a structured manner, enabling better code reusability and maintainability. Java provides a standard library of packages (such as java.util and java.lang) that offer a wide range of functionality out of the box. Additionally, packages support access control modifiers, which define the accessibility of classes and members to other classes.
+
+# Access Specifiers 
+In Java, access specifiers (also known as access modifiers) control the visibility and accessibility of classes, methods, and variables. There are four main types of access specifiers:
+
+1. Public
+- Keyword: public    
+- Scope: Accessible from any other class in the same package or any other package.
+- Usage: Used when you want to expose a class, method, or variable to all other classes.
+
+2. Private 
+- Keyword: private
+- Scope: Accessible only within the same class in which it is declared.
+- Usage: Used to encapsulate and hide the implementation details from other classes.
+
+3. Protected
+- Keyword: protected
+- Scope: Accessible within the same package and by subclasses in other packages.
+- Usage: Used when you want to allow access to subclasses but hide it from other non-related classes. 
+
+4. default 
+- Keyword: No keyword, simply omit the access specifier.
+- Scope: Accessible only within the same package.
+- Usage: Used when you want to restrict access to classes within the same package, providing a higher level of encapsulation.
+
+# Exception
+In Java, an exception is an event that disrupts the normal flow of a program's execution. Exceptions are objects that represent errors or unexpected events that occur during the runtime of a program. Java provides a robust and flexible exception handling mechanism to handle runtime errors, which helps in maintaining the normal flow of the application.
+
+1. Try
+2. Catch
+3. Finally
+
+# Thread
+In Java, a thread is a lightweight unit of execution that allows concurrent processing within a program. Java's multithreading capabilities enable the execution of multiple threads simultaneously, improving the performance and responsiveness of applications. The java.lang.Thread class and the java.lang.Runnable interface are the primary tools for creating and managing threads.
+1. Extend Thread Class
+2. Implement Runnable Interface
